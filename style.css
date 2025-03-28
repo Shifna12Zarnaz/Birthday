@@ -1,54 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #f2c94c;
-    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    flex-direction: column;
+    overflow: hidden;
+    color: white;
+    position: relative;
 }
-
-h1:hover {
-    cursor: pointer;
-    color: aqua;
+h1 {
+    font-size: 3em;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease-in-out;
 }
-
-header img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
+p {
+    font-size: 1.8em;
+    max-width: 700px;
+    animation: fadeIn 3s ease-in-out;
 }
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+.hidden {
+    display: none;
 }
-
-.name {
-    color: #f7f5f0;
+.photo-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+    animation: fadeInZoom 2s ease-in-out;
+}
+.photo:hover {
+    transform: scale(1.15) rotate(5deg);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.5);
+}
+button {
+    background: #ff4081;
+    color: white;
+    border: none;
+    padding: 15px 35px;
+    font-size: 1.5em;
     font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
-
-footer {
-    margin-top: 100px;
-    background-color: #f2f2f2;
-    color: #333;
-    text-align: center;
-    padding: 20px;
-
+button:hover {
+    background: #e6006f;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
-
-.w {
-    color: white;
-
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
-
-.ww {
-    color: white;
+@keyframes fadeInZoom {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
 }
