@@ -4,7 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Dancing Script', cursive, sans-serif;
+            text-align: center;
+            background-color: #ffe6e6;
+            padding: 20px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #333;
+        }
+        button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #e91e63;
+        }
+        .hidden {
+            display: none;
+        }
+        .photo-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px #888;
+            transition: transform 0.5s ease-in-out;
+        }
+        .photo:hover {
+            transform: scale(1.2);
+        }
+        .letter-container {
+            margin-top: 30px;
+            cursor: pointer;
+            display: inline-block;
+            padding: 15px;
+            background: #ffd700;
+            border-radius: 15px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        }
+        .tap-text {
+            font-size: 1.3em;
+            color: #000;
+            font-weight: bold;
+        }
+        .letter {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Hey my Handsome... 💖</h1>
@@ -13,9 +85,8 @@
     
     <div id="birthdayWishes" class="hidden">
         <h1>🎊 Happy Birthday, My Love! 🎂</h1>
-        <p> May Allah bless you with abundance of happiness,prosperity,peace ,health,wealth and abundance of love💖.May Allah bless you to be with your loved one on your next birthday.May Allah provide you everything you pray for.Am really sad that I cant be with u to torture you...its okay have a grt year ahead......
-          marakkaama antha letter ah read pnnugo...en anba kotti vechrke
-
+        <p> May Allah bless you with abundance of happiness, prosperity, peace, health, wealth, and abundance of love💖. May Allah bless you to be with your loved one on your next birthday. May Allah provide you everything you pray for. Am really sad that I can’t be with you to torture you... it’s okay, have a great year ahead...
+            Marakkaama antha letter ah read pannugo... en anba kotti vechrke.
         </p>
         <div class="photo-container">
             <img src="image1.jpeg" alt="Memory 1" class="photo">
@@ -29,33 +100,34 @@
         <p class="tap-text">📜 Tap to open your letter!</p>
         <div id="letter" class="hidden letter">
             <h2>Dear Love,</h2>
-            <p>From the moment we met, you have brought joy and love into my life. On your birthday, I just want to tell you how much you mean to me. May this year be filled with beautiful moments and endless happiness.
-                Today is not only the special day of yours,its mine too.Today,march 29,is the day my world was born,from whose rib I was created.
-                I am so lucky and blessed to have you in my life.And am always grateful to Allah for giving me in ur life.
-
-                I ll be always repeating that you are the beautiful answer for my dua.
-
-                I still feel the butterfly moments and lots of happiness you have given to me ,from the day I have met to the present.And I hope it ll continue till the rest of my life.
-
-                I really really miss you,my love.It's bit sad,that I cant be with you on ur special day...But In Sha Allah,we ll make it up on ur next birthday.
-
-                you always made me think,Ya Allah,this is more than I prayed for..
-                You  treated me like a princess when I felt useless.
-                you treated me like a baby,when I need attention and pampering. 
-                you treated me like a friend,when I needed someone to talk to.
-                you treated me like a partner,in case of any problems and decision making.
-
-                In short,I cant imagine a life without u...
-
-                seri seri ...romba neram konjam sentimental ah en love ah express pnnite....oi kulfi ice uh,..next bday ku special treat uh venuu..
-                etho ennaala mudinja oru chinna surprise...
-                
-                Happy Birthday, my love! 💖</p>
+            <p>From the moment we met, you have brought joy and love into my life. On your birthday, I just want to tell you how much you mean to me. May this year be filled with beautiful moments and endless happiness.</p>
+            <p>Today is not only the special day of yours, it's mine too. Today, March 29, is the day my world was born, from whose rib I was created. I am so lucky and blessed to have you in my life. And I am always grateful to Allah for giving me you in my life.</p>
+            <p>I’ll always be repeating that you are the beautiful answer to my dua.</p>
+            <p>I still feel the butterfly moments and the joy you have given me, from the day I met you to the present. And I hope it will continue for the rest of my life.</p>
+            <p>I really, really miss you, my love. It’s a bit sad that I can’t be with you on your special day... But In Sha Allah, we’ll make it up on your next birthday.</p>
+            <p>You always made me think, "Ya Allah, this is more than I prayed for..."</p>
+            <p>You treated me like a princess when I felt useless.  
+               You treated me like a baby when I needed attention and pampering.  
+               You treated me like a friend when I needed someone to talk to.  
+               You treated me like a partner in case of any problems and decision-making.</p>
+            <p>In short, I can’t imagine a life without you...</p>
+            <p>Seri seri ... romba neram konjam sentimental ah en love ah express pannite... oi kulfi ice uh, next birthday ku special treat uh venuu..  
+               Etho ennaala mudinja oru chinna surprise...</p>
+            
+            <p>Happy Birthday, my love! 💖</p>
             <p>With all my love,</p>
-            <p><strong>Ungalai anbu thollai seyyum,ungal palli 💕</strong></p>
+            <p><strong>Ungalai anbu thollai seyyum, ungal palli 💕</strong></p>
         </div>
     </div>
-    
-    <script src="script.js"></script>
+
+    <script>
+        function showWishes() {
+            document.getElementById("birthdayWishes").classList.remove("hidden");
+        }
+        
+        function showLetter() {
+            document.getElementById("letter").classList.remove("hidden");
+        }
+    </script>
 </body>
 </html>
